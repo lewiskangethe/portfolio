@@ -19,8 +19,16 @@ public class Portfolio implements Valuable {
         assets.add(asset);
     }
 
+
     @Override
     public double getValue() {
-        return 0;
+        // Loop through valuables in arraylist assets
+        double total = 0;
+        for (Valuable valuable: assets) {
+            // add everything up
+            total += valuable.getValue();
+        }
+        // return the total
+        return total;
     }
 }
