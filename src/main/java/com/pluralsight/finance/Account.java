@@ -1,6 +1,6 @@
 package com.pluralsight.finance;
 
-public abstract class Account {
+public abstract class Account implements Valuable {
     private String name;
     private String accountNumber;
     private double balance;
@@ -29,5 +29,5 @@ public abstract class Account {
         this.balance = balance;
     }
 
-    public abstract double getValue();
+//    public abstract double getValue();
 }
